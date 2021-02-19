@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  db:
+    container_name: secret_db
+    image: postgres:13-alpine
+    env_file:
+      - .env
+    ports:
+      - 5432:5432
