@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret App!</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .password {
+            display: block;
+            width: 95%;
+            max-width: 250px;
+            margin: 15px auto;
+            padding: 10px;
+            text-align: left;  
+            border: 1px solid grey; 
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2090fa;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decrypt Page</h1>
+    <form action="/decrypt" method="POST">
+        <input class="password" name="password" type="password" placeholder="Password" required/>
+        <input type="radio" name="action" value="view" checked/>View
+        <input type="radio" name="action" value="delete" />Delete
+        <br>
+        <br>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
